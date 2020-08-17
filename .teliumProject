@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?teliumProject version="9.1"?><?ingedev version="8.18.0.5"?><projectDescription activeConfig="GNU_ARM_DEBUG_TETRA" enableUsingCpp="true" projectType="APP">
+<virtualFolders>
+<virtualFolder name="Other Files" sources="false"/>
+<virtualFolder name="Source Files" sources="true">
+<file generated="false" name="Src/Main.c" parentProject=""/>
+<file generated="false" name="Src/Entry.c" parentProject=""/>
+<file generated="false" name="Src/AdviseMgr.c" parentProject=""/>
+<file generated="false" name="Src/Backlight.c" parentProject=""/>
+<file generated="false" name="Src/Buzzer.c" parentProject=""/>
+<file generated="false" name="Src/ComEthernet.c" parentProject=""/>
+<file generated="false" name="Src/ComGPRS.c" parentProject=""/>
+<file generated="false" name="Src/ComModem.c" parentProject=""/>
+<file generated="false" name="Src/ComPPP.c" parentProject=""/>
+<file generated="false" name="Src/ComSerial.c" parentProject=""/>
+<file generated="false" name="Src/ComUSB.c" parentProject=""/>
+<file generated="false" name="Src/ConfFlash.c" parentProject=""/>
+<file generated="false" name="Src/ConfHardware.c" parentProject=""/>
+<file generated="false" name="Src/ConfSoftware.c" parentProject=""/>
+<file generated="false" name="Src/crypto.c" parentProject=""/>
+<file generated="false" name="Src/Delay.c" parentProject=""/>
+<file generated="false" name="Src/DialogBox.c" parentProject=""/>
+<file generated="false" name="Src/Display.c" parentProject=""/>
+<file generated="false" name="Src/DLL.c" parentProject=""/>
+<file generated="false" name="Src/dukpt.c" parentProject=""/>
+<file generated="false" name="Src/EMV_ActionAnalysis.c" parentProject=""/>
+<file generated="false" name="Src/EMV_AppSel.c" parentProject=""/>
+<file generated="false" name="Src/EMV_CVM.c" parentProject=""/>
+<file generated="false" name="Src/EMV_FinalSelect.c" parentProject=""/>
+<file generated="false" name="Src/EMV_Init.c" parentProject=""/>
+<file generated="false" name="Src/EMV_Manager.c" parentProject=""/>
+<file generated="false" name="Src/EMV_OnlineProcessing.c" parentProject=""/>
+<file generated="false" name="Src/EMV_ServicesEmv.c" parentProject=""/>
+<file generated="false" name="Src/EMV_Stop.c" parentProject=""/>
+<file generated="false" name="Src/EMV_Support.c" parentProject=""/>
+<file generated="false" name="Src/EMV_UserInterface.c" parentProject=""/>
+<file generated="false" name="Src/EMV_UserInterfaceDisplay.c" parentProject=""/>
+<file generated="false" name="Src/English.c" parentProject=""/>
+<file generated="false" name="Src/EPSTOOL_Convert.c" parentProject=""/>
+<file generated="false" name="Src/EPSTOOL_PinEntry.c" parentProject=""/>
+<file generated="false" name="Src/EPSTOOL_TlvTree.c" parentProject=""/>
+<file generated="false" name="Src/EPSTOOL_Unicode.c" parentProject=""/>
+<file generated="false" name="Src/FFMS.c" parentProject=""/>
+<file generated="false" name="Src/FMG.c" parentProject=""/>
+<file generated="false" name="Src/FontISO8859.c" parentProject=""/>
+<file generated="false" name="Src/FontUTF8.c" parentProject=""/>
+<file generated="false" name="Src/globals.c" parentProject=""/>
+<file generated="false" name="Src/Goal.c" parentProject=""/>
+<file generated="false" name="Src/Graphic.c" parentProject=""/>
+<file generated="false" name="Src/IAC.c" parentProject=""/>
+<file generated="false" name="Src/IAM.c" parentProject=""/>
+<file generated="false" name="Src/iso8583.c" parentProject=""/>
+<file generated="false" name="Src/Keyboard.c" parentProject=""/>
+<file generated="false" name="Src/Layout.c" parentProject=""/>
+<file generated="false" name="Src/LIB.c" parentProject=""/>
+<file generated="false" name="Src/log.c" parentProject=""/>
+<file generated="false" name="Src/Magnetic.c" parentProject=""/>
+<file generated="false" name="Src/Mapapp.c" parentProject=""/>
+<file generated="false" name="Src/MapTra.c" parentProject=""/>
+<file generated="false" name="Src/MenuManager.c" parentProject=""/>
+<file generated="false" name="Src/MenuProcessing.c" parentProject=""/>
+<file generated="false" name="Src/Message.c" parentProject=""/>
+<file generated="false" name="Src/OnlineProcessing.c" parentProject=""/>
+<file generated="false" name="Src/Printer.c" parentProject=""/>
+<file generated="false" name="Src/req.c" parentProject=""/>
+<file generated="false" name="Src/rsp.c" parentProject=""/>
+<file generated="false" name="Src/Schemes.c" parentProject=""/>
+<file generated="false" name="Src/secureISO.c" parentProject=""/>
+<file generated="false" name="Src/Smart.c" parentProject=""/>
+<file generated="false" name="Src/Sqlite.c" parentProject=""/>
+<file generated="false" name="Src/TaskAnimation.c" parentProject=""/>
+<file generated="false" name="Src/TaskMutex.c" parentProject=""/>
+<file generated="false" name="Src/TaskSemaphore.c" parentProject=""/>
+<file generated="false" name="Src/Timer.c" parentProject=""/>
+<file generated="false" name="Src/Utility.c" parentProject=""/>
+<file generated="false" name="Src/VFS.c" parentProject=""/>
+<file generated="false" name="Src/rev.c" parentProject=""/>
+<file generated="false" name="Src/val.c" parentProject=""/>
+<file generated="false" name="Src/TaskGPRS.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Batch.c" parentProject=""/>
+<file generated="false" name="Src/Cless_BlackList.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Common.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Customisation.c" parentProject=""/>
+<file generated="false" name="Src/Cless_DataExchange.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Discover.c" parentProject=""/>
+<file generated="false" name="Src/Cless_DiscoverDPAS.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Disk.c" parentProject=""/>
+<file generated="false" name="Src/Cless_DumpData.c" parentProject=""/>
+<file generated="false" name="Src/Cless_ExplicitSelection.c" parentProject=""/>
+<file generated="false" name="Src/Cless_ExpressPay.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Fill.c" parentProject=""/>
+<file generated="false" name="Src/Cless_GlobalTransactionData.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Goal.c" parentProject=""/>
+<file generated="false" name="Src/Cless_GuiState.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Interac.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Manager.c" parentProject=""/>
+<file generated="false" name="Src/Cless_NameList.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Parameters.c" parentProject=""/>
+<file generated="false" name="Src/Cless_PayPass.c" parentProject=""/>
+<file generated="false" name="Src/Cless_payWave.c" parentProject=""/>
+<file generated="false" name="Src/Cless_PinEnManagement.c" parentProject=""/>
+<file generated="false" name="Src/Cless_PinEntryGoal.c" parentProject=""/>
+<file generated="false" name="Src/Cless_PinManagement.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Receipt.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Scan.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Servcomm.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Settings.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Term.c" parentProject=""/>
+<file generated="false" name="Src/Cless_Torn.c" parentProject=""/>
+<file generated="false" name="Src/Cless_TransactionFile.c" parentProject=""/>
+<file generated="false" name="Src/Cless_VisaWave.c" parentProject=""/>
+<file generated="false" name="Src/Cless_XML.c" parentProject=""/>
+<file generated="false" name="Src/perf_log.c" parentProject=""/>
+<file generated="false" name="Src/UserInterfaceHelpers.c" parentProject=""/>
+<file generated="false" name="Src/CLESS_lang.c" parentProject=""/>
+<file generated="false" name="Src/fnc.c" parentProject=""/>
+<file generated="false" name="Src/Cless_QuickPass.c" parentProject=""/>
+<file generated="false" name="Src/ComSSL.c" parentProject=""/>
+<file generated="false" name="Src/comWIFI.c" parentProject=""/>
+<file generated="false" name="Src/SSL_TLS.c" parentProject=""/>
+<file generated="false" name="Src/DualSim.c" parentProject=""/>
+</virtualFolder>
+<archiveFilesVirtualFolder name="Archive Files">
+<archive archiveModifierName="gmlToTbrConverter" dirParentProject="" directoryToArchive="GOAL/Resources" name="Bin/Resources.tar"/>
+</archiveFilesVirtualFolder>
+</virtualFolders>
+<configs>
+<config applicationType="0x6ef" asmCpuMode="thumb" assemblerCustomOpt="" binaryName="BSEAPPAPP0206" codeBaseAddr="0x1000" compiler="gnuArm4" compilerCustomOpt="" cpuMode="thumb" crc="true" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA06EF" defaultTeliumCompatibility="Telium 2" descr="National Microfinance Bank" disassembler="true" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" hardware="Telium 2" linkerCustomOpt="" name="GNU_ARM_DEBUG_T2" projectFamily="BSEAPPAPP" sign="false" stackProtectorMode="-fstack-protector-all" useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="IncGen"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.16.8.02"/>
+</teliumSdkPackages>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.6.7.00"/>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<teliumAddonPackage package="Easy Path to EMV" version="30.12.3.01"/>
+<teliumAddonPackage package="Telium Addon SQLite" version="1.12.0.00"/>
+</teliumAddonPackages>
+<dataFiles>
+<dataFile alias="Resources" isDefault="true" name="Bin/Resources.tar" parentProject="">
+<targetTerminals/>
+</dataFile>
+</dataFiles>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_BINARY_NAME=&quot;${appli_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_DATA_FILE_BINARY_NAME=&quot;${appli_full_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM1_BINARY_NAME=&quot;${appli_data_file_telium1_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM2_BINARY_NAME=&quot;${appli_data_file_telium2_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="__USE_ASSERT__"/>
+<userDefine value="DISABLE_PURE"/>
+<userDefine value="DISABLE_UNATTENDED"/>
+<userDefine value="DISABLE_INTERAC"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_VERSION=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="SSL_PROFILE_NAME=&quot;TRATLSSSL&quot;"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userSystemLibrariesOptions/>
+<userSystemLibraries/>
+<teliumPackageInfo countryCode="000" family="BSEAPPAPP" identifier="1775" maintenancePatch="00" majorVersion="00" minorRelease="00" range="00"/>
+<packageDefines>
+<packageDefine package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageDefine package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageDefine package="Easy Path to EMV" version="30.12.3.01"/>
+<packageDefine package="Telium Addon SQLite" version="1.12.0.00"/>
+<packageDefine package="Telium SDK" version="11.16.8.02"/>
+</packageDefines>
+<packageIncs>
+<packageInc package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageInc package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageInc package="Easy Path to EMV" version="30.12.3.01"/>
+<packageInc package="Telium Addon SQLite" version="1.12.0.00"/>
+<packageInc package="Telium SDK" version="11.16.8.02"/>
+</packageIncs>
+<packageLibraries>
+<packageLib name="DEL_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="DiscoverDPASInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="DiscoverInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="eftposInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="ExpressPayInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="InteracInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="JCBInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="PayPassInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="payWaveInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="qPBOCInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="QuickPassInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="VisaWaveInterface_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="SDI_TPlus" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="EmvApi_TPlus" package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageLib name="DEL_TPlus" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="EmvDcInterface_TPlus" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="EngineInterface_TPlus" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="EmvCoChecksum_TPlus" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="SQLITELIB" package="Telium Addon SQLite" version="1.12.0.00"/>
+<packageLib name="BarCode_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="eft30tplus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="TRAP_TELIUM_PLUS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="BCR_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SECTPLUS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SEC_extend" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="Digest_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="dll_wifi_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="IP_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBGRAPHICS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LinkLayerExeInterface_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SNMP_Tplus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SSL_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="gps_dll" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="IPA280_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="ExtraGPRS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="Mifare_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="TPass_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="GTL_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="NDEF_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SNTP" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="XMLs_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="FMG_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="TlvTree_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="GRAPHICLIB" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="FTP_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="OSLAYER" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBOS" package="Telium SDK" version="11.16.8.02"/>
+</packageLibraries>
+<packageSchemes>
+<packageScheme name="DEBUGSigned\T2\ScCplutlTlv.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\STLList_Tlv.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvAESCiph.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvCipherDa.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvDukpTDes.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvFirstKey.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvFree.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvHaMcS224.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvHMac.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvIso9564.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvKeyVerif.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvLoadData.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvLoadHMAC.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvLoadKey.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvLoadTR31.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvMacTDes.sgn" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="DEBUGSigned\T2\TlvMAKeyGen.sgn" package="Telium SDK" version="11.16.8.02"/>
+</packageSchemes>
+<userAsmDefines/>
+<userAsmIncs/>
+<externalSchemes/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" assemblerCustomOpt="" binaryName="BSEAPPAPP02" compiler="gnuArm47v7a" compilerCustomOpt="" cpuMode="thumb" crc="true" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium Tetra" descr="National Microfinance Bank" disassembler="true" enableCPPExceptions="true" enableFPieOption="false" enablePieOption="false" gcov="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" gprof="true" hardware="Telium Tetra" linkerCustomOpt="" name="GNU_ARM_DEBUG_TETRA" projectFamily="BSEAPPAPP" relroMode="None" sign="false" signatureCertificate="PAYMENT" signatureCertificateProvider="Telium SDK" stackProtectorMode="-fstack-protector-all" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="false">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.16.8.02"/>
+</teliumSdkPackages>
+<teliumPackageInfo countryCode="000" family="BSEAPPAPP" identifier="110" maintenancePatch="00" majorVersion="02" minorRelease="06" range="00"/>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.6.7.00"/>
+<teliumAddonPackage package="Easy Path to EMV" version="30.12.3.01"/>
+<teliumAddonPackage package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<teliumAddonPackage package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+</teliumAddonPackages>
+<dataFiles>
+<dataFile alias="Resources" isDefault="true" name="Bin/Resources.tar" parentProject="">
+<targetTerminals/>
+</dataFile>
+</dataFiles>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="SSL_PROFILE_NAME=&quot;TRATLSSSL&quot;"/>
+<userDefine value="BILLERPOS"/>
+<userDefine value="INGENICO_PIN"/>
+<userDefine value="_ING_TELIUM_SDK_LOC=&quot;${telium_sdk_loc}&quot;"/>
+<userDefine value="__TTQ__=&quot;\xF7\xE0\xC0\x00&quot;"/>
+<userDefine value="_ING_TELIUM_SDK_NAME=&quot;${telium_sdk_name}&quot;"/>
+<userDefine value="_ING_TELIUM_SDK_VERSION=&quot;${telium_sdk_version}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_FULL_BINARY_NAME=&quot;${appli_telium_tetra_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_BINARY_NAME=&quot;${appli_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_DATA_FILE_BINARY_NAME=&quot;${appli_full_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM_TETRA_BINARY_NAME=&quot;${appli_data_file_telium_tetra_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_NAME=&quot;${appli_telium_tetra_package_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_TYPE=&quot;${appli_telium_tetra_package_type}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_RANGE=&quot;${appli_telium_tetra_package_range}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_COUNTRY_CODE=&quot;${appli_telium_tetra_package_country_code}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_IDENTIFIER=&quot;${appli_telium_tetra_package_identifier}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_VERSION=&quot;${appli_telium_tetra_package_version}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_COMPONENT_NAME=&quot;${appli_telium_tetra_component_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_FAMILY=&quot;${appli_telium_tetra_package_family}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_ROOTNAME=&quot;${appli_telium_tetra_package_rootname}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="DISABLE_PURE"/>
+<userDefine value="DISABLE_UNATTENDED"/>
+<userDefine value="DISABLE_INTERAC"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userSystemLibrariesOptions/>
+<userSystemLibraries/>
+<packageIncs>
+<packageInc package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageInc package="Easy Path to EMV" version="30.12.3.01"/>
+<packageInc package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageInc package="Telium SDK" version="11.16.8.02"/>
+<packageInc package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+</packageIncs>
+<packageDefines>
+<packageDefine package="Easy Path to EMV" version="30.12.3.01"/>
+<packageDefine package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageDefine package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageDefine package="Telium SDK" version="11.16.8.02"/>
+<packageDefine package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+</packageDefines>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="IncGen"/>
+</userIncs>
+<packageLibraries>
+<packageLib name="libdel" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libDiscover" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libDiscoverDPAS" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libeftpos" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libexpresspay" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libinterac" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libJCB" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libpaypass" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libpaywave" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libqPBOC" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libquickpass" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libvisawave" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libemvcochecksum" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="libemvengine" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="libemvapi" package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageLib name="libSec" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libSecurityTp" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libbluetooth" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libwifi" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libpackip" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libTmsCall_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBGRAPHICS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SPMCI_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="ExtraGPRS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libtpass" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libgtl" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="TlvTree" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libGRAPHICLIB" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libwrapper_tplus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBTPLUSMANAGER" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBPROTOBUF" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBOS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libOSLAYER" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="liblinklayer" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SQLITELIB" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libmifare" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libtelinux" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBSERVICE" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBSVCDIRPX" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBSVCDIRSK" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBBATTERY" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBBLIGHT" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBBUZZER" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBCAPTURE" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBBIO" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBPPADTEXT" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBGPS" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libchip" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libcless" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBDESKTOP" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libethernet" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBEXPLORER" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libgprs" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libspmci" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBACCELERO" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBHEADER" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBINACTIVI" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libled" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libtmscall" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libtmsdownload" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libmodem" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBMONITOR" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libPpad" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBPRINTER" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBSCRSAVER" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libSecurity" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBSETTING" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libsoftmgt" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libswipe" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libtransac" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libTrEngine" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBVIRT_KB" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libtlvtree" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LibBridge" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="LIBMORPHO" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libtoken" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+<packageLib name="libndef" package="T3 service for T+ apps - ADD-On" version="11.16.8.02"/>
+</packageLibraries>
+<simpleLibraries>
+<simpleLib name="FMG_TPlus.a"/>
+</simpleLibraries>
+<externalSchemes/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" binaryName="BSEAPPAPP0205" codeBaseAddr="0x1000" compiler="gnuArm4" compilerCustomOpt="" cpuMode="thumb" crc="true" dataBaseAddr="0x200000" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium 2" descr="National Microfinance Bank" disassembler="false" enableCPPExceptions="false" gnu4StackProtectionMode="ProPolice" gnuOptim="-Os" hardware="Telium 2" linkerCustomOpt="" name="GNU_ARM_RELEASE_T2" projectFamily="BSEAPPAPP" sign="false" useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium 1"/>
+<teliumCompatibility value="Telium 2"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="IncGen"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.16.8.02"/>
+</teliumSdkPackages>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.6.7.00"/>
+</teliumAddonPackages>
+<dataFiles>
+<dataFile alias="Resources" isDefault="true" name="Bin/Resources.tar" parentProject="">
+<targetTerminals/>
+</dataFile>
+</dataFiles>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM1_FULL_BINARY_NAME=&quot;${appli_telium1_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM2_FULL_BINARY_NAME=&quot;${appli_telium2_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_BINARY_NAME=&quot;${appli_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_DATA_FILE_BINARY_NAME=&quot;${appli_full_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM1_BINARY_NAME=&quot;${appli_data_file_telium1_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM2_BINARY_NAME=&quot;${appli_data_file_telium2_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="DISABLE_PURE"/>
+<userDefine value="DISABLE_UNATTENDED"/>
+<userDefine value="DISABLE_INTERAC"/>
+<userDefine value="SSL_PROFILE_NAME=&quot;TRATLSSSL&quot;"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<externalSchemes/>
+<userSystemLibrariesOptions/>
+<userAsmDefines/>
+<userAsmIncs/>
+<userSystemLibraries/>
+<teliumPackageInfo countryCode="000" family="BSEAPPAPP" identifier="110" maintenancePatch="00" majorVersion="00" minorRelease="00" range="00"/>
+</config>
+<config applicationType="0x6e" asmCpuMode="thumb" assemblerCustomOpt="" binaryName="BSEAPPAPP0206" compiler="gnuArm47v7a" compilerCustomOpt="" cpuMode="thumb" crc="true" dataBinaryFileBaseName="DATA006E" defaultTeliumCompatibility="Telium Tetra" descr="Easy Path to Cless Sample" disassembler="true" enableCPPExceptions="true" enableFPieOption="false" enablePieOption="false" gcov="true" gnu4StackProtectionMode="ProPolice" gnuOptim="-O0" gprof="true" hardware="Telium Tetra" linkerCustomOpt="" name="GNU_ARM_RELEASE_TETRA" projectFamily="BSEAPPAPP" relroMode="None" sign="false" signatureCertificate="PAYMENT" signatureCertificateProvider="Telium SDK" stackProtectorMode="-fstack-protector-all" stripEnable="true" stripOpt=" --remove-section=.comment " useDataFileNamingConvention="true" zip="true">
+<teliumCompatibilities>
+<teliumCompatibility value="Telium Tetra"/>
+</teliumCompatibilities>
+<userIncs>
+<userInc value="Inc"/>
+<userInc value="IncGen"/>
+</userIncs>
+<teliumSdkPackages>
+<teliumSdkPackage package="Telium SDK" version="11.16.8.02"/>
+</teliumSdkPackages>
+<teliumPackageInfo countryCode="000" family="BSEAPPAPP" identifier="110" maintenancePatch="00" majorVersion="02" minorRelease="06" range="00"/>
+<teliumAddonPackages>
+<teliumAddonPackage package="Easy Path to C'Less" version="7.6.7.00"/>
+<teliumAddonPackage package="Easy Path to EMV" version="30.12.3.01"/>
+</teliumAddonPackages>
+<dataFiles>
+<dataFile alias="Resources" isDefault="true" name="Bin/Resources.tar" parentProject="">
+<targetTerminals/>
+</dataFile>
+</dataFiles>
+<userDefines>
+<userDefine value="_ING_APPLI_BINARY_NAME=&quot;${appli_binary_name}&quot;"/>
+<userDefine value="INGENICO_PIN"/>
+<userDefine value="_ING_TELIUM_SDK_LOC=&quot;${telium_sdk_loc}&quot;"/>
+<userDefine value="ICONMENU"/>
+<userDefine value="__TTQ__=&quot;\xF7\xE0\xC0\x00&quot;"/>
+<userDefine value="_ING_TELIUM_SDK_NAME=&quot;${telium_sdk_name}&quot;"/>
+<userDefine value="_ING_TELIUM_SDK_VERSION=&quot;${telium_sdk_version}&quot;"/>
+<userDefine value="_ING_APPLI_FAMILY=&quot;${appli_family}&quot;"/>
+<userDefine value="_ING_APPLI_TYPE=${appli_type}"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_FULL_BINARY_NAME=&quot;${appli_telium_tetra_full_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_COMPATIBILITY=&quot;${appli_telium_compatibility}&quot;"/>
+<userDefine value="_ING_APPLI_SIGN_MODE=&quot;${appli_sign_mode}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_BINARY_NAME=&quot;${appli_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_DATA_FILE_BINARY_NAME=&quot;${appli_full_data_file_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_DATA_FILE_TELIUM_TETRA_BINARY_NAME=&quot;${appli_data_file_telium_tetra_binary_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_NAME=&quot;${appli_telium_tetra_package_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_TYPE=&quot;${appli_telium_tetra_package_type}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_RANGE=&quot;${appli_telium_tetra_package_range}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_COUNTRY_CODE=&quot;${appli_telium_tetra_package_country_code}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_IDENTIFIER=&quot;${appli_telium_tetra_package_identifier}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_VERSION=&quot;${appli_telium_tetra_package_version}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_COMPONENT_NAME=&quot;${appli_telium_tetra_component_name}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_FAMILY=&quot;${appli_telium_tetra_package_family}&quot;"/>
+<userDefine value="_ING_APPLI_TELIUM_TETRA_PACKAGE_ROOTNAME=&quot;${appli_telium_tetra_package_rootname}&quot;"/>
+<userDefine value="_ING_APPLI_CURRENT_CONFIG_NAME=&quot;${appli_current_config_name}&quot;"/>
+<userDefine value="_ING_APPLI_FULL_BINARY_NAME=&quot;${appli_full_binary_name}&quot;"/>
+<userDefine value="DISABLE_PURE"/>
+<userDefine value="DISABLE_UNATTENDED"/>
+<userDefine value="DISABLE_INTERAC"/>
+<userDefine value="SSL_PROFILE_NAME=&quot;TRATLSSSL&quot;"/>
+</userDefines>
+<prebuild command="" description=""/>
+<postbuild command="" description=""/>
+<userSystemLibrariesOptions/>
+<userSystemLibraries/>
+<packageIncs>
+<packageInc package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageInc package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageInc package="Easy Path to EMV" version="30.12.3.01"/>
+<packageInc package="Telium SDK" version="11.16.8.02"/>
+</packageIncs>
+<packageLibraries>
+<packageLib name="libdel" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libDiscover" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libDiscoverDPAS" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libeftpos" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libexpresspay" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libinterac" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libJCB" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libpaypass" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libpaywave" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libqPBOC" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libvisawave" package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageLib name="libemvcochecksum" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="libemvengine" package="Easy Path to EMV" version="30.12.3.01"/>
+<packageLib name="libemvapi" package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageLib name="libSec" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libSecurityTp" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libbluetooth" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libwifi" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libpackip" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libTmsCall_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBGRAPHICS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SPMCI_TPlus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="ExtraGPRS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libtpass" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libgtl" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="TlvTree" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libGRAPHICLIB" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libwrapper_tplus" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBTPLUSMANAGER" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBPROTOBUF" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="LIBOS" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libOSLAYER" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="liblinklayer" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="SQLITELIB" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libmifare" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libtelinux" package="Telium SDK" version="11.16.8.02"/>
+<packageLib name="libquickpass" package="Easy Path to C'Less" version="7.6.7.00"/>
+</packageLibraries>
+<packageDefines>
+<packageDefine package="Easy Path to C'Less" version="7.6.7.00"/>
+<packageDefine package="Easy Path to EMV" version="30.12.3.01"/>
+<packageDefine package="Easy Path to EMV (EMV API)" version="30.12.3.01"/>
+<packageDefine package="Telium SDK" version="11.16.8.02"/>
+</packageDefines>
+<packageSchemes>
+<packageScheme name="Signed\HW_TETRA\500006012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500007012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500008012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500009012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500010012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500011012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500012012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500014012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500015012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500016012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500018012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500031010200.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500032030200.S3S" package="Telium SDK" version="11.16.8.02"/>
+<packageScheme name="Signed\HW_TETRA\500063012100.S3S" package="Telium SDK" version="11.16.8.02"/>
+</packageSchemes>
+<simpleLibraries>
+<simpleLib name="FMG_TPlus.a"/>
+</simpleLibraries>
+<userAsmDefines/>
+<userAsmIncs/>
+<externalSchemes/>
+</config>
+</configs>
+<groupConfigs/>
+<virtualFolders/>
+<virtualFolders/>
+<virtualFolders/>
+</projectDescription>

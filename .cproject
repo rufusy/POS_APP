@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="org.eclipse.cdt.core.default.config.1718212257">
+			<storageModule buildSystemId="org.eclipse.cdt.core.defaultConfigDataProvider" id="org.eclipse.cdt.core.default.config.1718212257" moduleId="org.eclipse.cdt.core.settings" name="Configuration">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GNU_ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.Cygwin_PE" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="com.ingenico.ingedev.telium.core.TeliumScannerInfoProvider" point="org.eclipse.cdt.core.ScannerInfoProvider"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry">
+		<pathentry kind="src" path=""/>
+		<pathentry include="D:/Program Files/BSE_APP/2018/BSEAPP/BSE_APP_v3/Inc" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Program Files/BSE_APP/2018/BSEAPP/BSE_APP_v3/IncGen" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/Easy Path to CLess 7.6.7.00/SDKTPLUS/HW_TETRA/gnu_473/inc" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/Easy Path to EMV 30.12.3.01/SDKTPLUS_Engine/HW_TETRA/gnu_473/inc" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/OS" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/CommonTools" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/Communication" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/GOAL" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/GTL" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/PCL" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/SDK" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/Security" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/SQLite" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/TeliumPlusEmulation" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/c/Platform/TPass" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/cpp" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/SDK11.16.4.02/SDKTPLUS/HW_TETRA/gnu_473/inc/cpp/ingenico" kind="inc" path="" system="true"/>
+		<pathentry include="C:/Program Files/TeliumSDK/Easy Path to EMV 30.12.3.01/SDKTPLUS_EmvApi/HW_TETRA/gnu_473/inc" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/arm-islero-linux-gnueabi/include/c++/4.7.3" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/arm-islero-linux-gnueabi/include/c++/4.7.3/arm-islero-linux-gnueabi" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/arm-islero-linux-gnueabi/include/c++/4.7.3/backward" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/lib/gcc/arm-islero-linux-gnueabi/4.7.3/include" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/lib/gcc/arm-islero-linux-gnueabi/4.7.3/include-fixed" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/arm-islero-linux-gnueabi/include" kind="inc" path="" system="true"/>
+		<pathentry include="D:/Ingenico/IngeDev_8.18.0.5/toolchains/gnuArm47v7a-4/arm-islero-linux-gnueabi/sysroot/usr/include" kind="inc" path="" system="true"/>
+		<pathentry kind="mac" name="DISABLE_INTERAC" path="" value=""/>
+		<pathentry kind="mac" name="DISABLE_PURE" path="" value=""/>
+		<pathentry kind="mac" name="DISABLE_UNATTENDED" path="" value=""/>
+		<pathentry kind="mac" name="INGENICO_PIN" path="" value=""/>
+		<pathentry kind="mac" name="SDK_VERSION" path="" value="111604"/>
+		<pathentry kind="mac" name="_EXPORT_" path="" value="1"/>
+		<pathentry kind="mac" name="_ING_APPLI_BINARY_NAME" path="" value="&quot;BSEAPPAPP0101&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_CURRENT_CONFIG_NAME" path="" value="&quot;GNU_ARM_DEBUG_TETRA&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_DATA_FILE_BINARY_NAME" path="" value="&quot;DATA006E&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_DATA_FILE_TELIUM_TETRA_BINARY_NAME" path="" value="&quot;DATA006E.T3P&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_FAMILY" path="" value="&quot;BSEAPPAPP&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_FULL_BINARY_NAME" path="" value="&quot;BSEAPPAPP0101.T3A&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_FULL_DATA_FILE_BINARY_NAME" path="" value="&quot;DATA006E.T3P&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_SIGN_MODE" path="" value="&quot;Unsigned&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_COMPATIBILITY" path="" value="&quot;Telium Tetra&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_COMPONENT_NAME" path="" value="&quot;BSEAPPAPP0101.T3A&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_FULL_BINARY_NAME" path="" value="&quot;BSEAPPAPP0101.T3A&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_COUNTRY_CODE" path="" value="&quot;000&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_FAMILY" path="" value="&quot;BSEAPPAPP&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_IDENTIFIER" path="" value="&quot;110&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_NAME" path="" value="&quot;8001100102_BSEAPPAPP.P3A&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_RANGE" path="" value="&quot;00&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_ROOTNAME" path="" value="&quot;8001100102_BSEAPPAPP&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_TYPE" path="" value="&quot;A&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TELIUM_TETRA_PACKAGE_VERSION" path="" value="&quot;010200&quot;"/>
+		<pathentry kind="mac" name="_ING_APPLI_TYPE" path="" value="0x6e"/>
+		<pathentry kind="mac" name="_ING_GNU_ARM_DEBUG_TETRA" path="" value=""/>
+		<pathentry kind="mac" name="_PACKAGE_NAME_" path="" value="TeliumPlusSDK"/>
+		<pathentry kind="mac" name="__FRAMEWORK_TELIUM_PLUS__" path="" value="1"/>
+		<pathentry kind="mac" name="__GNUC__" path="" value=""/>
+		<pathentry kind="mac" name="__TELIUM3__" path="" value="1"/>
+		<pathentry kind="mac" name="__TTQ__" path="" value="&quot;\xF7\xE0\xC0\x00&quot;"/>
+		<pathentry kind="mac" name="__USE_ASSERT__" path="" value=""/>
+		<pathentry kind="out" path=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>

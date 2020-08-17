@@ -1,0 +1,481 @@
+------------------------------------------------
+Searching for include 'sdk30.h'... No match found!
+------------------------------------------------
+Searching for function 'ServiceGet'... No match found!
+------------------------------------------------
+Searching for function 'Powered'... No match found!
+------------------------------------------------
+Searching for function 'fclose'... No match found!
+------------------------------------------------
+Searching for function 'SV_output_command'... No match found!
+------------------------------------------------
+Searching for function 'kill'... No match found!
+------------------------------------------------
+Searching for function 'EMV_apdu'... No match found!
+------------------------------------------------
+Searching for function 'CurrentTask'... No match found!
+------------------------------------------------
+Searching for function 'ServiceRegister'... No match found!
+------------------------------------------------
+Searching for function 'fputc'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_InitMailBox'... No match found!
+------------------------------------------------
+Searching for function 'ChngEventFile'... No match found!
+------------------------------------------------
+Searching for function 'power_on_sync'... No match found!
+------------------------------------------------
+Searching for function 'fwrite'... No match found!
+------------------------------------------------
+Searching for function 'send'... No match found!
+------------------------------------------------
+Searching for function 'fputs'... No match found!
+------------------------------------------------
+Searching for function 'stdprt'... No match found!
+------------------------------------------------
+Searching for function 'writesocket'... No match found!
+------------------------------------------------
+Searching for function 'GetErrno'... No match found!
+------------------------------------------------
+Searching for function 'SV_power_on'... No match found!
+------------------------------------------------
+Searching for function '__inet_ntoa'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_TestReceive'... No match found!
+------------------------------------------------
+Searching for function 'InitMailBox'... No match found!
+------------------------------------------------
+Searching for function 'P'... No match found!
+------------------------------------------------
+Searching for function 'ServiceRemove'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_Send'... No match found!
+------------------------------------------------
+Searching for function 'read_date'... No match found!
+------------------------------------------------
+Searching for function 'recvfrom'... No match found!
+------------------------------------------------
+Searching for function 'fbreak'... No match found!
+------------------------------------------------
+Searching for function 'sendto'... No match found!
+------------------------------------------------
+Searching for function 'status'... No match found!
+------------------------------------------------
+Searching for function 'GetTerminalType'... Found 1 match(es)
+Found function 'GetTerminalType' in file 'Cless_Common.c' at line '552'
+------------------------------------------------
+Searching for function 'ServiceCall'... No match found!
+------------------------------------------------
+Searching for function 'TaskState'... No match found!
+------------------------------------------------
+Searching for function 'EventsOccurred'... No match found!
+------------------------------------------------
+Searching for function 'Send'... No match found!
+------------------------------------------------
+Searching for function 'ClearEvents'... No match found!
+------------------------------------------------
+Searching for function 'connect'... No match found!
+------------------------------------------------
+Searching for function 'getsockname'... No match found!
+------------------------------------------------
+Searching for function 'fgets'... No match found!
+------------------------------------------------
+Searching for function 'GiveNoTask'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_StopDelay'... No match found!
+------------------------------------------------
+Searching for function 'WaitEvents'... No match found!
+------------------------------------------------
+Searching for function 'fopen'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_V'... No match found!
+------------------------------------------------
+Searching for function 'exit'... No match found!
+------------------------------------------------
+Searching for function '__inet_addr'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_Receive'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_StartLDelay'... No match found!
+------------------------------------------------
+Searching for function 'Receive'... No match found!
+------------------------------------------------
+Searching for function 'ferror'... No match found!
+------------------------------------------------
+Searching for function 'readsocket'... No match found!
+------------------------------------------------
+Searching for function 'gethostbyaddr_r'... No match found!
+------------------------------------------------
+Searching for function 'SV_power_down'... No match found!
+------------------------------------------------
+Searching for function 'defdisplaypatterndsp'... No match found!
+------------------------------------------------
+Searching for function '__STDOUT'... No match found!
+------------------------------------------------
+Searching for function '__STDIN'... No match found!
+------------------------------------------------
+Searching for function 'USR_ServiceCall'... No match found!
+------------------------------------------------
+Searching for function 'EMV_power_on'... No match found!
+------------------------------------------------
+Searching for function 'fowner'... No match found!
+------------------------------------------------
+Searching for function 'getpeername'... No match found!
+------------------------------------------------
+Searching for function 'recv'... No match found!
+------------------------------------------------
+Searching for function 'InitGkDrv'... No match found!
+------------------------------------------------
+Searching for function 'putchar'... No match found!
+------------------------------------------------
+Searching for function 'socket'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_EventsOccurred'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_SignalEvent'... No match found!
+------------------------------------------------
+Searching for function 'Terminate'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_TestP'... No match found!
+------------------------------------------------
+Searching for function 'send_receive'... No match found!
+------------------------------------------------
+Searching for function 'sendmsg'... No match found!
+------------------------------------------------
+Searching for function 'TestP'... No match found!
+------------------------------------------------
+Searching for function 'power_down'... No match found!
+------------------------------------------------
+Searching for function 'SV_write_date'... No match found!
+------------------------------------------------
+Searching for function 'ioctlsocket'... No match found!
+------------------------------------------------
+Searching for function 'SV_read_date'... No match found!
+------------------------------------------------
+Searching for function 'output_command'... No match found!
+------------------------------------------------
+Searching for function 'SV_input_command'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_ClearEvents'... No match found!
+------------------------------------------------
+Searching for function 'shutdown'... No match found!
+------------------------------------------------
+Searching for function 'fioctl'... No match found!
+------------------------------------------------
+Searching for function '__inet_aton'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_P'... No match found!
+------------------------------------------------
+Searching for function 'getchar'... No match found!
+------------------------------------------------
+Searching for function 'getsockopt'... No match found!
+------------------------------------------------
+Searching for function 'puts'... No match found!
+------------------------------------------------
+Searching for function 'powered'... No match found!
+------------------------------------------------
+Searching for function 'ntohl'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_TaskState'... No match found!
+------------------------------------------------
+Searching for function 'ntohs'... No match found!
+------------------------------------------------
+Searching for function 'putc'... No match found!
+------------------------------------------------
+Searching for function 'input_command'... No match found!
+------------------------------------------------
+Searching for function 'closesocket'... No match found!
+------------------------------------------------
+Searching for function 'listen'... No match found!
+------------------------------------------------
+Searching for function 'fork'... No match found!
+------------------------------------------------
+Searching for function 'fread'... No match found!
+------------------------------------------------
+Searching for function 'StopDelay'... No match found!
+------------------------------------------------
+Searching for function 'reset_buf'... No match found!
+------------------------------------------------
+Searching for function 'setsockopt'... No match found!
+------------------------------------------------
+Searching for function 'StartLDelay'... No match found!
+------------------------------------------------
+Searching for function 'V'... No match found!
+------------------------------------------------
+Searching for function 'gethostbyname_r'... No match found!
+------------------------------------------------
+Searching for function 'SignalEvent'... No match found!
+------------------------------------------------
+Searching for function 'power_on'... No match found!
+------------------------------------------------
+Searching for function 'power_down_sync'... No match found!
+------------------------------------------------
+Searching for function 'stdperif'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_Terminate'... No match found!
+------------------------------------------------
+Searching for function 'InitSemaphore'... No match found!
+------------------------------------------------
+Searching for function 'ungetc'... No match found!
+------------------------------------------------
+Searching for function 'vsprintf'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_InitSemaphore'... No match found!
+------------------------------------------------
+Searching for function 'htonl'... No match found!
+------------------------------------------------
+Searching for function 'get_tick_counter'... No match found!
+------------------------------------------------
+Searching for function 'ctrl_date'... No match found!
+------------------------------------------------
+Searching for function 'accept'... No match found!
+------------------------------------------------
+Searching for function 'TestReceive'... No match found!
+------------------------------------------------
+Searching for function 'fprintf'... No match found!
+------------------------------------------------
+Searching for function 'is_iso1'... No match found!
+------------------------------------------------
+Searching for function 'download'... No match found!
+------------------------------------------------
+Searching for function 'is_iso2'... No match found!
+------------------------------------------------
+Searching for function 'is_iso3'... No match found!
+------------------------------------------------
+Searching for function 'isbattery'... No match found!
+------------------------------------------------
+Searching for function 'mask_event'... No match found!
+------------------------------------------------
+Searching for function 'clearerr'... No match found!
+------------------------------------------------
+Searching for function 'pprintf'... No match found!
+------------------------------------------------
+Searching for function 'getc'... No match found!
+------------------------------------------------
+Searching for function 'shutdownsocket'... No match found!
+------------------------------------------------
+Searching for function 'recvmsg'... No match found!
+------------------------------------------------
+Searching for function 'printf'... No match found!
+------------------------------------------------
+Searching for function 'FormatOem'... No match found!
+------------------------------------------------
+Searching for function 'write_date'... No match found!
+------------------------------------------------
+Searching for function 'SetErrno'... No match found!
+------------------------------------------------
+Searching for function 'ttestall'... No match found!
+------------------------------------------------
+Searching for function 'mask_event_read'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_WaitEvents'... No match found!
+------------------------------------------------
+Searching for function 'SystemFioctl'... No match found!
+------------------------------------------------
+Searching for function 'bind'... No match found!
+------------------------------------------------
+Searching for function 'htons'... No match found!
+------------------------------------------------
+Searching for function 'selectsocket'... No match found!
+------------------------------------------------
+Searching for function 'OS_rtc_CurrentTask'... No match found!
+------------------------------------------------
+Searching for function 'defdisplaypattern'... No match found!
+------------------------------------------------
+Searching for function 'OEM_exit'... No match found!
+------------------------------------------------
+Searching for function 'esc_command'... No match found!
+------------------------------------------------
+Searching for function 'format'... No match found!
+------------------------------------------------
+Searching for function 'sprintf'... Found 51 match(es)
+Found function 'sprintf' in file 'Cless_Common.c' at line '217'
+Found function 'sprintf' in file 'Cless_Common.c' at line '223'
+Found function 'sprintf' in file 'Cless_Common.c' at line '227'
+Found function 'sprintf' in file 'Cless_Common.c' at line '241'
+Found function 'sprintf' in file 'Cless_Common.c' at line '245'
+Found function 'sprintf' in file 'Cless_Common.c' at line '252'
+Found function 'sprintf' in file 'Cless_Common.c' at line '258'
+Found function 'sprintf' in file 'Cless_Common.c' at line '262'
+Found function 'sprintf' in file 'Cless_Common.c' at line '270'
+Found function 'sprintf' in file 'Cless_Common.c' at line '274'
+Found function 'sprintf' in file 'Cless_DataExchange.c' at line '263'
+Found function 'sprintf' in file 'Cless_DataExchange.c' at line '553'
+Found function 'sprintf' in file 'Cless_DataExchange.c' at line '577'
+Found function 'sprintf' in file 'Cless_DataExchange.c' at line '580'
+Found function 'sprintf' in file 'Cless_DataExchange.c' at line '606'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '76'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '206'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '217'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '260'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '313'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '316'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '455'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '516'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '517'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '659'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '706'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '819'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '945'
+Found function 'sprintf' in file 'Cless_Settings.c' at line '998'
+Found function 'sprintf' in file 'Entry.c' at line '1327'
+Found function 'sprintf' in file 'Entry.c' at line '2667'
+Found function 'sprintf' in file 'Entry.c' at line '2670'
+Found function 'sprintf' in file 'FFMS.c' at line '517'
+Found function 'sprintf' in file 'comSSL2.c' at line '133'
+Found function 'sprintf' in file 'comSSL2.c' at line '136'
+Found function 'sprintf' in file 'comSSL2.c' at line '139'
+Found function 'sprintf' in file 'comSSL2.c' at line '142'
+Found function 'sprintf' in file 'comSSL2.c' at line '145'
+Found function 'sprintf' in file 'comSSL2.c' at line '148'
+Found function 'sprintf' in file 'comSSL2.c' at line '151'
+Found function 'sprintf' in file 'comSSL2.c' at line '154'
+Found function 'sprintf' in file 'comSSL2.c' at line '157'
+Found function 'sprintf' in file 'comSSL2.c' at line '160'
+Found function 'sprintf' in file 'comSSL2.c' at line '196'
+Found function 'sprintf' in file 'comSSL2.c' at line '435'
+Found function 'sprintf' in file 'crypto.c' at line '237'
+Found function 'sprintf' in file 'crypto.c' at line '269'
+Found function 'sprintf' in file 'crypto.c' at line '297'
+Found function 'sprintf' in file 'crypto.c' at line '696'
+Found function 'sprintf' in file 'crypto.c' at line '742'
+Found function 'sprintf' in file 'crypto.c' at line '749'
+------------------------------------------------
+Searching for function 'defprinterpattern'... No match found!
+------------------------------------------------
+Searching for function 'defprinterpatternHR'... No match found!
+------------------------------------------------
+Searching for type 'DATE'... Found 8 match(es)
+Found type 'DATE' in file 'Cless_Common.h' at line '131'
+Found type 'DATE' in file 'Cless_Common.h' at line '131'
+Found type 'DATE' in file 'Cless_Common.c' at line '36'
+Found type 'DATE' in file 'Cless_Common.c' at line '409'
+Found type 'DATE' in file 'Cless_Common.c' at line '444'
+Found type 'DATE' in file 'Cless_Common.c' at line '444'
+Found type 'DATE' in file 'Cless_Common.c' at line '448'
+Found type 'DATE' in file 'fnc.c' at line '983'
+------------------------------------------------
+Searching for type 'SAP'... No match found!
+------------------------------------------------
+Searching for type 'svc_callback'... No match found!
+------------------------------------------------
+Searching for type 'service_desc_t'... No match found!
+------------------------------------------------
+Searching for type 'svc_service_desc_t'... No match found!
+------------------------------------------------
+Searching for type 'FILE'... No match found!
+------------------------------------------------
+Searching for type 'fd_set'... No match found!
+------------------------------------------------
+Searching for type 'timeval'... No match found!
+------------------------------------------------
+Searching for type 'sockaddr'... No match found!
+------------------------------------------------
+Searching for type 'in_addr'... No match found!
+------------------------------------------------
+Searching for type 'sockaddr_in'... No match found!
+------------------------------------------------
+Searching for type 'iovec'... No match found!
+------------------------------------------------
+Searching for type 'linger'... No match found!
+------------------------------------------------
+Searching for type 'msghdr'... No match found!
+------------------------------------------------
+Searching for type 'cmsghdr'... No match found!
+------------------------------------------------
+Searching for type 'hostent'... No match found!
+------------------------------------------------
+Searching for macro 'stdout'... No match found!
+------------------------------------------------
+Searching for macro 'stdin'... No match found!
+------------------------------------------------
+Searching for macro '__FD_MAX'... No match found!
+------------------------------------------------
+Searching for macro 'SOL_SOCKET'... No match found!
+------------------------------------------------
+Searching for macro 'SO_ERROR'... No match found!
+------------------------------------------------
+Searching for macro 'INADDR_ANY'... No match found!
+------------------------------------------------
+Searching for macro 'INADDR_LOOPBACK'... No match found!
+------------------------------------------------
+Searching for macro 'INADDR_BROADCAST'... No match found!
+------------------------------------------------
+Searching for macro 'INADDR_NONE'... No match found!
+------------------------------------------------
+Searching for macro 'F_GETFL'... No match found!
+------------------------------------------------
+Searching for macro 'F_SETFL'... No match found!
+------------------------------------------------
+Searching for macro 'O_NONBLOCK'... No match found!
+------------------------------------------------
+Searching for macro 'IOC_OUT'... No match found!
+------------------------------------------------
+Searching for macro 'IOC_IN'... No match found!
+------------------------------------------------
+Searching for macro 'IOCPARM_MASK'... No match found!
+------------------------------------------------
+Searching for macro '_IOC'... No match found!
+------------------------------------------------
+Searching for macro '_IOR'... No match found!
+------------------------------------------------
+Searching for macro '_IOW'... No match found!
+------------------------------------------------
+Searching for macro 'FIONBIO'... No match found!
+------------------------------------------------
+Searching for macro 'FIONREAD'... No match found!
+------------------------------------------------
+Searching for macro 'SIOCATMARK'... No match found!
+------------------------------------------------
+Searching for macro 'FD_ZERO'... No match found!
+------------------------------------------------
+Searching for macro 'FD_SET'... No match found!
+------------------------------------------------
+Searching for macro 'FD_CLR'... No match found!
+------------------------------------------------
+Searching for macro 'FD_ISSET'... No match found!
+------------------------------------------------
+Searching for macro 'FD_CLR'... No match found!
+------------------------------------------------
+Searching for macro 'HOST_NOT_FOUND'... No match found!
+------------------------------------------------
+Searching for macro 'TRY_AGAIN'... No match found!
+------------------------------------------------
+Searching for macro 'NO_RECOVERY'... No match found!
+------------------------------------------------
+Searching for macro 'NO_DATA_ERR'... No match found!
+------------------------------------------------
+Searching for macro 'NO_ADDRESS'... No match found!
+------------------------------------------------
+Replacing function 'GetTerminalType' to 'TM_GetTerminalType' in file 'Cless_Common.c'... OK
+------------------------------------------------
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'Cless_Common.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'Cless_DataExchange.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'Cless_Settings.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'Entry.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'FFMS.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'comSSL2.c'... OK
+Replacing function 'sprintf' to 'Telium_Sprintf' in file 'crypto.c'... OK
+------------------------------------------------
+Replacing type 'DATE' to 'Telium_Date_t' in file 'Cless_Common.h'... Failed!
+Replacing type 'DATE' to 'Telium_Date_t' in file 'Cless_Common.c'... Failed!
+Replacing type 'DATE' to 'Telium_Date_t' in file 'fnc.c'... Failed!
+
+
+================================================
+Execution report:
+================================================
+------------------------------------------------
+Warnings:
+------------------------------------------------
+Warning: Refactoring contains 3 matches within comments. - Renaming 'sprintf' to 'Telium_Sprintf' in file 'Cless_DataExchange.c' at line '263'
+Warning: Parsing error - Attempt to use symbol failed: DATE -  in file 'E:\Program Files\BSE_APP\2019\BSEAPP\BSE_APP_v3\Inc\Cless_Common.h' at line '131' - Renaming 'DATE' to 'Telium_Date_t' in file 'Cless_Common.h' at line '131'
+Warning: Parsing error - Attempt to use symbol failed: DATE -  in file 'E:\Program Files\BSE_APP\2019\BSEAPP\BSE_APP_v3\Src\Cless_Common.c' at line '36' - Renaming 'DATE' to 'Telium_Date_t' in file 'Cless_Common.c' at line '36'
+Warning: Parsing error - Attempt to use symbol failed: DATE -  in file 'E:\Program Files\BSE_APP\2019\BSEAPP\BSE_APP_v3\Src\fnc.c' at line '983' - Renaming 'DATE' to 'Telium_Date_t' in file 'fnc.c' at line '983'
+------------------------------------------------
+Errors:
+------------------------------------------------
+Error: The selected name cannot be renamed. - Renaming 'DATE' to 'Telium_Date_t' in file 'Cless_Common.h' at line '131': Failed!
+Error: The selected name cannot be renamed. - Renaming 'DATE' to 'Telium_Date_t' in file 'Cless_Common.c' at line '36': Failed!
+Error: The selected name cannot be renamed. - Renaming 'DATE' to 'Telium_Date_t' in file 'fnc.c' at line '983': Failed!
+================================================

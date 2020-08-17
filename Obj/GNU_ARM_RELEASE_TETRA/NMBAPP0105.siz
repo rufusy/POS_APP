@@ -1,0 +1,39 @@
+Obj/GNU_ARM_RELEASE_TETRA/BSEAPPAPP0105.axf  :
+section              size      addr
+.interp                19     33108
+.note.ABI-tag          32     33128
+.hash                 624     33160
+.dynsym              1392     33784
+.dynstr              1075     35176
+.gnu.version          174     36252
+.gnu.version_r        160     36428
+.rel.dyn               56     36588
+.rel.plt              536     36644
+.init                  12     37180
+.plt                  836     37192
+.text             1461344     38032
+.fini                   8   1499376
+.rodata            348872   1499384
+.ARM.exidx             24   1848256
+.eh_frame               4   1848280
+.tbss                 888   1881052
+.init_array           452   1881052
+.fini_array            12   1881504
+.jcr                    4   1881516
+.dynamic              272   1881520
+.got                  452   1881792
+.data               51748   1882256
+.bss               337916   1934008
+.comment              134         0
+.ARM.attributes        65         0
+.debug_aranges       4384         0
+.debug_info        929633         0
+.debug_abbrev       54693         0
+.debug_line        139611         0
+.debug_frame        54908         0
+.debug_str         106964         0
+.debug_loc         115628         0
+.debug_ranges        1168         0
+Total             3614100
+
+

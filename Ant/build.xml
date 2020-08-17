@@ -1,0 +1,565 @@
+<project name="Build" default="main">
+
+	<!-- Activate all antcontrib tasks (for instance, needed for the 'foreach' task). -->
+	<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+	<property name="debugflag" value="false"/>
+
+	<property name="build.log.dir" location="${basedir}/buildlogs"/>
+	<mkdir dir="${build.log.dir}"/>
+	<tstamp>
+		<format property="timestamp" pattern="yyyy-MM-dd_HH-mm-ss"/>
+	</tstamp>
+
+	<property name="build.log.filename" value="buildLog_${timestamp}.txt"/>
+	<property name="rebuild.err.filename" value="buildErrors_${timestamp}.txt"/>
+
+	<property name="exportDir" location="${basedir}/Delivery" />
+	<property name="importDir" location="${basedir}/Delivery" />
+	<property name="workspaceDir" location="${basedir}/../.." />
+
+	<target name="initProjectName">
+		<ingedev.getCurrentProjectName outputproperty="projectName"/>
+	</target>
+
+	<target name="setProjectType" depends="initProjectName">
+		<ingedev.telium.getProjectType project="${projectName}" outputproperty="projectType"/>
+	</target>
+
+	<target name="setProjectFramework" depends="initProjectName">
+		<ingedev.telium.getProjectFramework project="${projectName}" outputproperty="projectFramework"/>
+	</target>
+
+
+	<!-- main target (called by default) -->
+	<target name="main" depends="initProjectName,setProjectType,setProjectFramework">
+		<record name="${build.log.dir}/${build.log.filename}" loglevel="info" append="false" action="start"/>
+		<echo message="Build logged to ${build.log.filename}"/>
+
+		<!-- ${ingedev.version} property is set to IngeDev version-->
+		<echo message="IngeDev Version=">${ingedev.version}</echo>
+
+		<!-- ${ingedev.headless} property is set to true if IngeDev has been launched from command line.-->
+		<echo message="IngeDev headless mode: ${ingedev.headless}"/>
+
+		<echo message=""/>
+		<echo message="**************************************************************"/>
+		<echo>Building '${projectName}'... </echo>
+		<echo>Project type: '${projectType}' </echo>
+		<echo>Project framework: '${projectFramework}' </echo>
+
+		<echo message=""/>
+		<echo message="**************************************************************"/>
+		<echo message="Build ACTIVE Configuration"/>
+
+        <!-- Disable indexer of current project -->
+        <ingedev.disableIndexer project="${projectName}"/>
+
+		<antcall target="build_ACTIVE_CONFIG">
+		</antcall>
+
+		<record name="${build.log.dir}/${build.log.filename}" loglevel="verbose" append="false" action="stop"/>
+		<eclipse.refreshLocal resource="${projectName}" depth="infinite"/>
+
+        <!-- Enable indexer of current project -->
+        <ingedev.enableIndexer project="${projectName}"/>
+	</target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: disableIndexerForProjects
+
+        Disable indexer for all projects of the workspace (Telium and non Telium).
+    - - - - - - - - - - - - - - - - - -->
+    <target name="disableIndexerForAllProjects">
+        <ingedev.disableIndexer/>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: enableIndexerForAllProjects
+
+        Enable indexer for all projects of the workspace (Telium and non Telium).
+    - - - - - - - - - - - - - - - - - -->
+    <target name="enableIndexerForAllProjects">
+        <ingedev.enableIndexer/>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: getProjectAbsolutePath
+
+        Get the project absolute path using Eclipse convertPath ANT task with project name as parameter.
+    - - - - - - - - - - - - - - - - - -->
+    <target name="getProjectAbsolutePath" depends="initProjectName">
+        <eclipse.convertPath resourcePath="${projectName}" property="projectAbsolutePath"/>
+        <echo>Project absolute path: '${projectAbsolutePath}'</echo>
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+	    target: setBuildConfigsPropertiesForAllConfigs
+
+	    Set the build configurations properties of a given project (project="${projectName}")
+	    for all configurations (config="ALL").
+	- - - - - - - - - - - - - - - - - -->
+	<target name="setBuildConfigsPropertiesForAllConfigs" depends="initProjectName">
+
+		<ingedev.telium.setBuildConfigsProperties
+						config="ALL"
+						project="${projectName}"
+						telium_compatibility="All"
+						default_telium_compatibility="Telium 2"
+						sign_after_build="false"
+						generate_crc="false"
+						enable_zip="false"
+                        enableFPieOption="false"
+                        enablePieOption="false"
+                        relroMode="None"
+						enablestackprotection="ProPolice"
+						stackprotectormode="-fstack-protector-all"
+						/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+	    target: setBuildConfigsPropertiesForOneConfig
+
+	    Set the build configurations properties of a given project (project="${projectName}")
+        for a given configuration (if config is not given, use the Active configuration).
+	- - - - - - - - - - - - - - - - - -->
+	<target name="setBuildConfigsPropertiesForOneConfig" depends="initProjectName">
+
+		<ingedev.telium.setBuildConfigsProperties
+						project="${projectName}"
+						telium_compatibility="Telium 1"
+						sign_after_build="true"
+						generate_crc="true"
+						enable_zip="true"
+						/>
+	</target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: getBuildConfigPackageFileRootName
+
+        Get the build configuration property PackageFileRootName of a given project (project="${projectName}")
+        for a given configuration (if config is not given, use the Active configuration).
+    - - - - - - - - - - - - - - - - - -->
+    <target name="getBuildConfigPackageFileRootName" depends="initProjectName">
+
+        <ingedev.telium.getBuildConfigProperty key="packageFileRootName" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="packageFileRootName=${var}"/>
+    </target>
+
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: getBuildConfigBinaryName
+
+        Get the build configuration property binaryName of a given project (project="${projectName}")
+        for a given configuration (if config is not given, use the Active configuration).
+    - - - - - - - - - - - - - - - - - -->
+    <target name="getBuildConfigBinaryName" depends="initProjectName">
+
+        <ingedev.telium.getBuildConfigProperty key="binaryName" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="binaryName=${var}"/>
+    </target>
+
+    <target name="getBuildConfigFPieOptionValue" depends="initProjectName">
+        <ingedev.telium.getBuildConfigProperty key="enableFPieOption" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="enableFPieValue=${var}"/>
+    </target>
+
+    <target name="getBuildConfigPieOptionValue" depends="initProjectName">
+        <ingedev.telium.getBuildConfigProperty key="enablePieOption" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="enablePieValue=${var}"/>
+    </target>
+
+    <target name="getBuildConfigRelroModeValue" depends="initProjectName">
+        <ingedev.telium.getBuildConfigProperty key="relroMode" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="relroRelroModeValue=${var}"/>
+    </target>
+
+    <target name="getBuildConfigStackProtectionOptionValue" depends="initProjectName">
+        <ingedev.telium.getBuildConfigProperty key="enableStackProtection" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="enableStackProtectionValue=${var}"/>
+    </target>
+
+    <target name="getBuildConfigStackProtectorModeOptionValue" depends="initProjectName">
+        <ingedev.telium.getBuildConfigProperty key="stackProtectorMode" outputproperty="var"
+            project="${projectName}"/>
+        <echo message="stackProtectorModeValue=${var}"/>
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: setActiveConfig
+
+        Set the active configuration of the given project
+         - - - - - - - - - - - - - - - - - -->
+    <target name="setActiveConfig" depends="initProjectName">
+        <ingedev.telium.setActiveConfig
+            project="${projectName}"
+            config="GNU_ARM_DEBUG"
+        />
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: build_ACTIVE_CONFIG
+
+		Build ACTIVE_CONFIG configuration
+         - - - - - - - - - - - - - - - - - -->
+	<target name="build_ACTIVE_CONFIG" depends="initProjectName">
+		<ingedev.telium.build
+						project="${projectName}"
+				 		kind ="incremental"
+						/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+			target: getAllWSProjects
+
+			List all workspaces projects (even non Telium projects)
+				         - - - - - - - - - - - - - - - - - -->
+	<target name="getAllWSProjects">
+		<ingedev.getProjects outputproperty="list.projects" separator=";" />
+		<foreach list="${list.projects}" param="prj" target="echoPrj" delimiter=";" />
+	</target>
+	<target name="echoPrj">
+		<echo message="Project=${prj}" />
+	</target>
+
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: buildAllConfigsWithForEach
+
+		get all Telium configuration and call 'buildOneConfig' target to build each config
+	- - - - - - - - - - - - - - - - - -->
+	<target name="buildAllConfigsWithForEach" depends="initProjectName">
+		<ingedev.telium.getBuildConfigurations
+			debugflag="${debugflag}"
+			project="${projectName}"
+			outputProperty="configList"
+			/>
+		<foreach list="${configList}" param="one.build.config" target="buildOneConfig" delimiter=" ">
+		</foreach>
+	</target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: setStaticCodeAnalysisConfig
+
+    Set static code analysis properties for the given project (project="${projectName}").
+    - 'staticCodeAnalyzer' parameter is mandatory
+    - 'staticCodeAnalysisEnabled' parameter is optional (if not set, current value is kept)
+    - - - - - - - - - - - - - - - - - -->
+    <target name="setStaticCodeAnalysisConfig" depends="initProjectName">
+         <ingedev.telium.setStaticCodeAnalysisConfig
+                        project="${projectName}" staticCodeAnalysisEnabled="true" staticCodeAnalyzer="Klocwork"/>
+    </target>
+
+	<target name="klocwork" depends="initProjectName">
+		<ingedev.klocwork.outcreation
+						project="${projectName}"/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+	    target: buildOneConfig
+
+	    build (kind ="incremental") the given config (one.build.config property) for the
+		given project (project="${projectName}").
+	- - - - - - - - - - - - - - - - - -->
+	<target name="buildOneConfig" depends="initProjectName">
+
+		<ingedev.telium.build
+						config="${one.build.config}"
+						project="${projectName}"
+				 		kind ="incremental"
+						/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: buildAllConfig
+
+		build (kind ="incremental") all configuration (config="ALL") for the
+		given project (project="${projectName}"), and fail on error (failonerror="true").
+		That means the build stop at the first found error, and consequently does not continue
+		with other configurations.
+	- - - - - - - - - - - - - - - - - -->
+
+	<target name="buildAllConfig" depends="initProjectName">
+		<property name="outputErrFileName" value="${build.log.dir}/${rebuild.err.filename}">
+		</property>
+		<ingedev.telium.build
+			errorsoutputfile="${outputErrFileName}"
+			failonerror="true"
+			config="ALL"
+			project="${projectName}"
+			kind ="incremental"/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: rebuildAllConfigWithFailOnError
+
+		rebuild (kind ="full") all configuration (config="ALL") for the
+		given project (project="${projectName}"), and fail on error (failonerror="true").
+		That means the build stop at the first found error, and consequently does not continue
+       	with other configurations.
+	- - - - - - - - - - - - - - - - - -->
+
+	<target name="rebuildAllConfigWithFailOnError" depends="initProjectName">
+		<property name="outputErrFileName" value="${build.log.dir}/${rebuild.err.filename}">
+		</property>
+		<ingedev.telium.build
+				errorsoutputfile="${outputErrFileName}"
+				failonerror="true"
+				config="ALL"
+				project="${projectName}"
+				kind ="full"/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: rebuildAllConfigAndTestIfFailed
+
+		rebuild (kind ="full") all configuration (config="ALL") for the
+		given project (project="${projectName}"), and don't fail on error (failonerror="false").
+		That means even an error is found build continue for other configurations.
+        At the end, if the given 'outputErrFileName' exists, that means there are some errors, and the build fails
+	- - - - - - - - - - - - - - - - - -->
+	<target name="rebuildAllConfigAndTestIfFailed" depends="initProjectName">
+		<property name="outputErrFileName" value="${build.log.dir}/${rebuild.err.filename}"/>
+		<ingedev.telium.build
+			errorsoutputfile="${outputErrFileName}"
+			failonerror="false"
+			config="ALL"
+			project="${projectName}"
+			kind ="full"/>
+		<eclipse.refreshLocal resource="${build.log.dir}" depth="infinite"/>
+		<available file="${outputErrFileName}" property="errors.exist"/>
+		<fail if="errors.exist" message="Errors occurs during the build. See '${outputErrFileName}' for more details...">
+		</fail>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: exportLib
+
+        Export for Ingedev the given Telium Static library project (Framework Telium2)
+		- - - - - - - - - - - - - - - - - -->
+	<target name="exportLib" depends="initProjectName">
+
+		<ingedev.telium.export project="${projectName}" configs="ALL"  kind="full" exportPath="${exportDir}" stripsymbols="true" />
+	</target>
+
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: importLib
+
+		Import an Exported Telium Library project
+		- - - - - - - - - - - - - - - - - -->
+	<target name="importLib" depends="initProjectName">
+		<unzip src="${importDir}/${projectName}.zip" dest="../"/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: svn-checkout
+
+		Import from svn
+	- - - - - - - - - - - - - - - - - -->
+	<target name="svn-checkout" >
+		<property name="apptest" value="TTestApp1"/>
+		<property name="svnurl_telium_example" value="https://svn.ingenico.com/TOOLS/ExternalTools/QA/FolderSet/IngeDEv/Telium" />
+		<svn username="${user.name}"  password="">  <!-- set password -->
+			<checkout url="${svnurl_telium_example}/${apptest}" revision="HEAD"  destpath="${workspaceDir}/${apptest}"  />
+		</svn>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: migrate Sdk/Addon project
+
+		from 11.4.0.16 to 11.6.2.00
+	- - - - - - - - - - - - - - - - - -->
+	<target	name="migrateSdkProject"  depends="initProjectName">
+		<property name="teliumsdk" value="Telium SDK" />
+		<ingedev.telium.migrateSdkAddon
+			name="${teliumsdk}"
+			project="${projectName}"
+			version="11.4.0.16"
+			newversion="11.6.2.00"	/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: migrate all Sdk/Addon project
+
+		named "Telium SDK" to 11.6.2.00
+	- - - - - - - - - - - - - - - - - -->
+	<target	name="migrateAllSdkProject"  depends="initProjectName">
+		<property name="teliumsdk" value="Telium SDK" />
+		<ingedev.telium.migrateSdkAddon
+			name="${teliumsdk}"
+			project="${projectName}"
+			all="true"
+			newVersion="11.6.2.00"	/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: Add Sdk/Addon project
+
+	- - - - - - - - - - - - - - - - - -->
+
+	<target	name="addTeliumSdkAddon"  >
+	<!--  Copy the following line before '<ingedev.telium.addSdkAddon.../>' command and set location value to your Telium Sdk or Telium Addon location
+	(parameter failonerror="false" can be added to keep going if SDK/Add-On is already added, if not set, failonerror="true" by default)
+	-->
+	<!--<property name="teliumsdkpath" location="D:/applicationsfiles/ingenico/SDK30/SDK 9.2.0/SDKDescriptor.xml" /> -->
+		<ingedev.telium.addSdkAddon sdk_descriptor_url="${teliumsdkpath}"/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: Remove all Telium Sdk & Addon
+
+	- - - - - - - - - - - - - - - - - -->
+	<target	name="removeAllTeliumSdkAddon">
+		<ingedev.telium.removeAllSdkAddon/>
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: Remove all Telium Sdk of a given Framework
+
+	- - - - - - - - - - - - - - - - - -->
+	<target	name="removeAllTeliumSdkAddonFramework">
+		<ingedev.telium.removeAllSdkAddon   framework="FrameWork TeliumPlus"/>
+	</target>
+
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: importProject
+
+		Import the project into the workspace
+	- - - - - - - - - - - - - - - - - -->
+	<target name="importProject">
+		<ingedev.projectImport projectdir="D:\mytest2"/>
+	</target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: migrateProject
+
+        Migrate the project if needed
+        (parameter failonerror="false" can be added to keep going if project is already migrated, if not set, failonerror="true" by default)
+    - - - - - - - - - - - - - - - - - -->
+    <target name="migrateProject" depends="initProjectName">
+        <ingedev.telium.migrateProject project="${projectName}"/>
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: removeProject
+
+		Remove the project from the workspace
+	- - - - - - - - - - - - - - - - - -->
+	<target name="removeProject">
+		<ingedev.removeProject projectname="test2"/>
+	</target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: getSdkVersion
+
+        Display the version list of the SDK found in the project configuration given
+    - - - - - - - - - - - - - - - - - -->
+
+	   <target name="getSdkVersion"  depends="initProjectName">
+        <property name="teliumsdk" value="Telium SDK" />
+        <ingedev.telium.getSdkAddonVersion
+            name="${teliumsdk}"
+            project="${projectName}"
+            configname="GNU_ARM_DEBUG"
+            outputproperty="sdkVersion"
+            failonerror="false"
+            />
+        <foreach list="${sdkVersion}" param="one.sdk.version" target="displaySdkVersion" delimiter=" ">
+        </foreach>
+    </target>
+
+    <target name="displaySdkVersion">
+        <echo message="SDK version is: ${one.sdk.version}"/>
+        <!--treatment can be done here -->
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+	        target: setBuildPreferences
+
+	        Set the Build Preferences
+	    - - - - - - - - - - - - - - - - - -->
+	<target name="setBuildPreferences">
+		<ingedev.setBuildPreferences 
+			maxerrors="5"
+			debugflag="true"
+			maxcommandlinesize="31284"
+			buildverbose="false"
+			gnutoolsshell="cygwinShell"
+			stackprotectionchecker="true"
+			/>
+	</target>
+	<!-- - - - - - - - - - - - - - - - - -
+			        target: getTeliumPreferences
+
+			        Get the Telium Preferences
+			    - - - - - - - - - - - - - - - - - -->
+		<target name="getTeliumPreferences">
+			<ingedev.telium.getPreferences key="sattoolpath" outputproperty="var1" />
+			<echo message="key=${var1}" />
+            <ingedev.telium.getPreferences key="enableparallelmode" outputproperty="var2" />
+            <echo message="enableparallelmode=${var2}" />
+            <ingedev.telium.getPreferences key="maxjobsparallelmode" outputproperty="var3" />
+            <echo message="maxjobsparallelmode=${var3}" />
+            <ingedev.telium.getPreferences key="maxloadparallelmode" outputproperty="var4" />
+            <echo message="maxloadparallelmode=${var4}" />
+            <ingedev.telium.getPreferences key="stackProtectionChecker" outputproperty="var5" />
+            <echo message="stackProtectionChecker=${var5}" />
+		</target>
+
+		<!-- - - - - - - - - - - - - - - - - -
+				        target: setTeliumPreferences
+
+				        Set the Telium Preferences
+				    - - - - - - - - - - - - - - - - - -->
+		<target name="setTeliumPreferences">
+			<ingedev.telium.setPreferences
+				debugflag="true"
+                sattoolpath="D:\applicationsfiles\ingenico\TELIUM Tools\SAT1.5.1"
+                enableparallelmode="false"
+                maxjobsparallelmode="8"
+                maxloadparallelmode="0.0"
+                stackProtectionChecker="true"
+            />
+		</target>
+
+        <!-- - - - - - - - - - - - - - - - - -
+                        target: setTeliumParallelBuildsPreferences
+
+                        Set the Telium Parallel Builds Preferences
+                    - - - - - - - - - - - - - - - - - -->
+        <target name="setTeliumParallelBuildsPreferences">
+            <ingedev.telium.setParallelBuildsPreferences
+                enable="false"
+                maxjobs="8"
+                maxload="0.0"
+            />
+        </target>
+
+    <!-- - - - - - - - - - - - - - - - - -
+        target: migrateAllSdkForAllFrameworks
+
+        Migrate all Telium SDK to latest version for all frameworks
+     - - - - - - - - - - - - - - - - - -->
+    <target name="migrateAllSdkForAllFrameworks">
+        <ingedev.telium.migrateSdkAddonByFramework frameworkname="ALL" sdkaddonname="Telium SDK" sdkaddonversion="latest"/>
+    </target>
+
+	<!-- - - - - - - - - - - - - - - - - -
+		target: compareVersion
+
+		Compare two versions (OSGI format)
+	- - - - - - - - - - - - - - - - - -->
+	<target name="compareVersion">
+		<ingedev.checkVersion arg1="8.6.0.1" arg2="8.6.0.0" comparator="lower_or_equal" outputProperty="checkUpper86"/>
+		<echo message="result= ${checkUpper86}"/>
+	</target>
+
+</project>

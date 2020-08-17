@@ -1,0 +1,39 @@
+Obj/GNU_ARM_DEBUG_TETRA/BSEAPPAPP02.axf  :
+section              size      addr
+.interp                19     33108
+.note.ABI-tag          32     33128
+.hash                 620     33160
+.dynsym              1376     33780
+.dynstr              1067     35156
+.gnu.version          172     36224
+.gnu.version_r        160     36396
+.rel.dyn               56     36556
+.rel.plt              528     36612
+.init                  12     37140
+.plt                  824     37152
+.text             1396876     37976
+.fini                   8   1434852
+.rodata            327200   1434860
+.ARM.exidx             24   1762060
+.eh_frame               4   1762084
+.tbss                 888   1794856
+.init_array           452   1794856
+.fini_array            12   1795308
+.jcr                    4   1795320
+.dynamic              272   1795324
+.got                  448   1795596
+.data               51968   1796048
+.bss               326388   1848016
+.comment              134         0
+.ARM.attributes        65         0
+.debug_aranges       4352         0
+.debug_info        941513         0
+.debug_abbrev       54258         0
+.debug_line        130993         0
+.debug_frame        54956         0
+.debug_str         107301         0
+.debug_loc         114900         0
+.debug_ranges        1168         0
+Total             3519050
+
+
